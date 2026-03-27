@@ -104,7 +104,7 @@ La dinámica del tipo de cambio $S_t$ en tiempo continuo está dada por:
     \label{eq:sde}
 \end{equation}
 
-donde $W_t$ es un proceso de Wiener estándar, $N_t$ es un proceso de Poisson
+donde $W_t$ es un proceso de Wiener estándar (1976), $N_t$ es un proceso de Poisson
 con intensidad $\lambda_j$, y $J \sim \mathcal{LN}(\mu_j, \sigma_j^2)$ es el
 tamaño log-normal del salto.  En discretización exacta por pasos diarios
 (esquema log-Euler):
@@ -203,7 +203,6 @@ introducida por los saltos.  El código calcula:
     \mu^* \;=\; \mu - \lambda_j\,\kappa
     \;=\; 0.025 - 3.0 \times (-0.009505)
     \;=\; 0.025 + 0.028515
-    \;\approx\; 0.05352 \quad (5.352\,\%)
     \label{eq:mu_corr}
 \end{equation}
 
